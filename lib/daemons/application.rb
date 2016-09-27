@@ -30,7 +30,7 @@ module Daemons
 
       @dir_mode = @dir = @script = nil
 
-      @force_kill_waittime = @options[:force_kill_waittime] || 20
+      @force_kill_waittime = @options[:force_kill_waittime] || 1200 # 20 mins
 
       @show_status_callback = method(:default_show_status)
 
